@@ -62,38 +62,38 @@ The dataset contains detailed information about vehicles, their technical specif
 
 The dataset contains the following fields for each vehicle:
 
-| Campo                      | Tipo de Dato                           | Descripción / Formato                                  |
-|----------------------------|----------------------------------------|-------------------------------------------------------|
-| id                         | integer                                | Identificador único                                   |
-| plate_number               | string                                 | Placa del vehículo (3 letras + 3 números)             |
-| brand                      | category                               | Marca del vehículo                                    |
-| model                      | category                               | Modelo del vehículo                                   |
-| year                       | integer                                | Año de fabricación                                    |
-| color                      | category                               | Color del vehículo                                    |
-| fuel_type                  | category                               | Tipo de combustible (Gasoline, Electric, Diesel, Hybrid) |
-| transmission_type          | category                               | Tipo de transmisión (Automatic, Manual)               |
-| odometer_reading           | float                                  | Valor del odómetro                                    |
-| insurance_provider         | category                               | Compañía de seguros                                   |
-| owner_name                 | string                                 | Nombre del propietario                                |
-| owner_id                   | string                                 | ID del propietario                                    |
-| owner_address              | string                                 | Dirección del propietario                             |
-| city                       | category                               | Ciudad de registro                                    |
-| department                 | category                               | Departamento/región                                  |
-| vehicle_type               | category                               | Tipo de vehículo                                      |
-| engine_size                | float                                  | Tamaño del motor en litros                            |
-| wheel_drive                | category                               | Tipo de tracción                                      |
-| number_of_seats            | integer                                | Número de asientos                                    |
-| number_of_doors            | integer                                | Número de puertas                                     |
-| gps_installed              | boolean                                | GPS instalado (Sí/No)                                 |
-| emission_standard          | category                               | Estándar de emisiones                                 |
-| safety_rating              | category                               | Clasificación de seguridad                            |
-| insurance_coverage_type    | category                               | Tipo de cobertura de seguro                           |
-| estimated_market_value     | float                                  | Valor estimado de mercado                             |
-| vehicle_status             | category                               | Estado actual (IN_USE, SELLING, MAINTENANCE)          |
-| accident_history           | boolean                                | Historial de accidentes (Sí/No)                       |
-| registration_date          | date                                   | Fecha de registro                                     |
-| insurance_expiration_date  | date                                   | Fecha de expiración del seguro                        |
-| last_maintenance_date      | date                                   | Fecha del último mantenimiento                        |
+| Field                      | Data Type      | Description / Format                              |
+|---------------------------|---------------|--------------------------------------------------|
+| `id`                      | integer       | Unique identifier                                |
+| `plate_number`            | string        | Vehicle license plate (3 letters + 3 numbers)    |
+| `brand`                   | category      | Vehicle manufacturer brand                      |
+| `model`                   | category      | Vehicle model designation                       |
+| `year`                    | integer       | Manufacturing year (YYYY)                       |
+| `color`                   | category      | Exterior color                                  |
+| `fuel_type`               | category      | `Gasoline`, `Electric`, `Diesel`, `Hybrid`      |
+| `transmission_type`       | category      | `Automatic`, `Manual`, `CVT`                    |
+| `odometer_reading`        | float         | Current mileage (km or miles)                   |
+| `insurance_provider`      | category      | Insurance company name                          |
+| `owner_name`              | string        | Legal owner's full name                         |
+| `owner_id`                | string        | Government-issued ID number                     |
+| `owner_address`           | string        | Complete street address                         |
+| `city`                    | category      | Registration city                               |
+| `department`              | category      | State/Province/Department                      |
+| `vehicle_type`            | category      | `Sedan`, `SUV`, `Truck`, etc.                   |
+| `engine_size`             | float         | Displacement in liters (e.g. 2.0)               |
+| `wheel_drive`             | category      | `FWD`, `RWD`, `AWD`, `4WD`                      |
+| `number_of_seats`         | integer       | Passenger capacity (2-9)                        |
+| `number_of_doors`         | integer       | Typically 2, 3, 4, or 5                         |
+| `gps_installed`           | boolean       | `True`/`False`                                  |
+| `emission_standard`       | category      | `Euro 6`, `Tier 4`, etc.                        |
+| `safety_rating`           | category      | `1-5 stars` or `A-F` scale                      |
+| `insurance_coverage_type` | category      | `Full`, `Liability`, `Collision`                |
+| `estimated_market_value`  | float         | Current value in local currency                 |
+| `vehicle_status`          | category      | `IN_USE`, `SELLING`, `MAINTENANCE`, `REPAIR`   |
+| `accident_history`        | boolean       | `True` if previously damaged                   |
+| `registration_date`       | date          | First registration date (YYYY-MM-DD)            |
+| `insurance_expiration_date` | date        | Policy end date (YYYY-MM-DD)                   |
+| `last_maintenance_date`   | date          | Most recent service date (YYYY-MM-DD)           |
 
 
 ### Creating a Virtual Environment
